@@ -11,3 +11,5 @@ Dockerfile.tmp
 # The deployed site uses public/assets instead.
 /IMG_*
 /WhatsApp Image *.jpeg
+
+.vercel
