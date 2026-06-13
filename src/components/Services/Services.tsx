@@ -1,5 +1,7 @@
 import { shootDescription, shootFormats } from "../../data/services";
+import { shootVideos } from "../../data/portfolioData";
 import { Section } from "../UI/Section";
+import { VideoCard } from "../UI/VideoCard";
 import styles from "./Services.module.css";
 
 export function Services() {
@@ -9,12 +11,14 @@ export function Services() {
         <h2>Разовые съёмки</h2>
         <p>{shootDescription}</p>
       </div>
-      <div className={styles.serviceGrid}>
-        {shootFormats.map((format, index) => (
-          <article className={styles.serviceCard} key={format}>
-            <span>{String(index + 1).padStart(2, "0")}</span>
-            <p>{format}</p>
-          </article>
+      <div className={styles.videoGrid}>
+        {shootVideos.map((item) => (
+          <VideoCard key={item.title} title={item.title} description={item.description} video={item.video} />
+        ))}
+      </div>
+      <div className={styles.formats}>
+        {shootFormats.map((format) => (
+          <span key={format}>{format}</span>
         ))}
       </div>
     </Section>
