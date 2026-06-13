@@ -16,10 +16,12 @@
 .heading h2 {
   max-width: 900px;
   margin: 0;
-  font-family: var(--font-hand);
-  font-size: clamp(2.8rem, 8vw, 6.8rem);
-  line-height: 0.92;
+  font-family: var(--font-accent);
+  font-size: clamp(3.3rem, 8.8vw, 7.4rem);
+  font-weight: 400;
+  line-height: 0.86;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .heading p {

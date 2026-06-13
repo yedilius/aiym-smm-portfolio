@@ -2,9 +2,9 @@
   position: relative;
   padding: clamp(72px, 9vw, 128px) 0;
   overflow: hidden;
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 720ms ease, transform 720ms ease;
+  opacity: 1;
+  transform: none;
+  transition: background-color 240ms ease;
 }
 
 .visible {

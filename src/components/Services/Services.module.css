@@ -9,10 +9,12 @@
 .heading h2 {
   margin: 0;
   color: var(--color-pink);
-  font-family: var(--font-hand);
-  font-size: clamp(3.2rem, 9vw, 8rem);
-  line-height: 0.86;
+  font-family: var(--font-accent);
+  font-size: clamp(3.6rem, 9.5vw, 8rem);
+  font-weight: 400;
+  line-height: 0.82;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .heading p {

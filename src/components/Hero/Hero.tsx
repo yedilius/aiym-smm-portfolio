@@ -1,4 +1,4 @@
-import { profile, stats } from "../../data/portfolioData";
+import { profile } from "../../data/portfolioData";
 import { Button } from "../UI/Button";
 import styles from "./Hero.module.css";
 
@@ -25,14 +25,6 @@ export function Hero() {
           <img src={profile.hero.image} alt="Айым, SMM-специалист" loading="eager" />
           <figcaption>visual / reels / smm</figcaption>
         </figure>
-      </div>
-      <div className={styles.stats} aria-label="Краткие факты">
-        {stats.map((item) => (
-          <div key={item.label}>
-            <strong>{item.value}</strong>
-            <span>{item.label}</span>
-          </div>
-        ))}
       </div>
       <a className={styles.down} href="#about" aria-label="Перейти к разделу обо мне">
         ↓
