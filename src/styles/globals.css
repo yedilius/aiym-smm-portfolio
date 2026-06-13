@@ -1,16 +1,4 @@
 :root {
-  --font-script-local: "Marggraff Kursiv Zarte";
-}
-
-@font-face {
-  font-family: "Marggraff Kursiv Zarte";
-  src: url("/assets/fonts/Marggraff-Kursiv-Zarte.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-:root {
   --color-graphite: #191919;
   --color-graphite-soft: #252525;
   --color-paper: #f7f5f1;
@@ -22,7 +10,7 @@
   --font-display: Impact, "Arial Black", "Montserrat ExtraBold", "Oswald", system-ui, sans-serif;
   --font-body: Inter, Manrope, Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-hand: Caveat, "Bad Script", Neucha, "Segoe Print", "Comic Sans MS", cursive;
-  --font-accent: var(--font-script-local), var(--font-hand);
+  --font-accent: "Trebuchet MS", Manrope, Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color-scheme: dark;
   font-family: var(--font-body);
   background: var(--color-graphite);
